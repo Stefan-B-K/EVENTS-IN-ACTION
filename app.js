@@ -1,17 +1,21 @@
 const app = Vue.createApp({
-  data() {
+  data () {
     return {
       counter: 0,
-      name: ''
-    };
+      name: '',
+    }
   },
   methods: {
-    add(number) { this.counter += number},
-    remove(number) { this.counter -= number },
-    setName(event) {
-      this.name = event.target.value
+    add (number) {
+      this.counter += number
+    },
+    remove (number) {
+      this.counter -= number
+    },
+    resetInput () {
+      this.name = ''
     }
   }
-});
+})
 
-app.mount('#events');
+app.mount('#events')

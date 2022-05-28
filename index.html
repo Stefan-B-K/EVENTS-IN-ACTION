@@ -22,10 +22,10 @@
   <button @click="add(1)">Add 1</button>
   <p>Result: {{ counter }}</p>
   <label>
-    <input type="text" @input="setName"/>
+    <input type="text" v-model="name"/>
   </label>
+  <button @click="resetInput">Reset Input</button>
   <p>Your Name: {{ name }}</p>
-
 </section>
 </body>
 </html>
